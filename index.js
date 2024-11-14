@@ -3,8 +3,9 @@ const fs = require('fs');
 
 const program = new Command();
 
+
 program
-    .requiredOption('-i, --input <path>', 'шлях до файлу, який даємо для читання')
+    .option('-i, --input <path>', 'шлях до файлу, який даємо для читання')
     .option('-o, --output <path>', 'шлях до файлу, у якому записуємо результат')
     .option('-d, --display', 'вивести результат у консоль');
 
